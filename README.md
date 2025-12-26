@@ -65,6 +65,8 @@ For detailed setup instructions, see [SETUP_GUIDE.md](./SETUP_GUIDE.md)
 ## 📦 Scripts
 
 - `npm run setup` - Interactive environment setup
+- `npm run check:env` - Validate environment configuration
+- `npm run test:db` - Test MongoDB connection
 - `npm run dev` - Start development server with auto-reload
 - `npm run build` - Build for production
 - `npm start` - Start production server

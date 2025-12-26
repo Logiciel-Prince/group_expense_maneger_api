@@ -5,6 +5,8 @@
     "main": "dist/server.js",
     "scripts": {
         "setup": "node setup.js",
+        "check:env": "node check-env.js",
+        "test:db": "node test-mongodb.js",
         "dev": "nodemon src/server.ts",
         "build": "tsc",
         "start": "node dist/server.js",

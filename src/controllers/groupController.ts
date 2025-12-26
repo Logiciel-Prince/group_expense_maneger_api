@@ -2,8 +2,7 @@ import { Response } from 'express';
 import { Group } from '../models/Group';
 import { User } from '../models/User';
 import { AppError } from '../middleware/errorHandler';
-import { AuthRequest } from '../middleware/auth';
-import mongoose from 'mongoose';
+import { AuthRequest } from "../middleware/auth";
 
 export const groupController = {
   // Create a new group

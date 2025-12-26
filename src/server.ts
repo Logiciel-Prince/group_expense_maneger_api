@@ -65,13 +65,21 @@ const limiter = rateLimit({
 
 app.use('/api/', limiter);
 
+app.get("/", (_req: Request, res: Response) => {
+    res.status(200).json({
+        success: true,
+        message: "Welcome to the Group Expense Manager API",
+        timestamp: new Date().toISOString(),
+    });
+});
+
 // Health check endpoint
-app.get('/health', (req: Request, res: Response) => {
-  res.status(200).json({
-    success: true,
-    message: 'Server is running',
-    timestamp: new Date().toISOString(),
-  });
+app.get("/health", (_req: Request, res: Response) => {
+    res.status(200).json({
+        success: true,
+        message: "Server is running",
+        timestamp: new Date().toISOString(),
+    });
 });
 
 // API routes
